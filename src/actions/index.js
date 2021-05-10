@@ -1,10 +1,25 @@
-export const increase = ()=>{
+export const increase = (num)=>{
     return {
-        type: 'INCREASE'
+        type: 'INCREASE',
+        payload: num,
     }
 }
-export const decrease = ()=>{
+export const decrease = (num)=>{
     return {
-        type: 'DECREASE'
+        type: 'DECREASE',
+        payload: num,
+    }
+}
+
+export const multNumber = (num)=>{
+    return {
+        type: 'MULT',
+        payload: num,
+    }
+}
+export const divNumber = (num)=>{
+    return {
+        type: 'DIVIDE',
+        payload: num,
     }
 }
